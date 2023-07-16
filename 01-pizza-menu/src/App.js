@@ -1,14 +1,14 @@
-import Header from './Header.js';
-import Menu from './Menu';
-import Footer from './Footer';
+import Header from './components/Header.js';
+import Menu from './components/Menu.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
-    <>
+    <div className='container'>
       <Header />
       <Menu />
       <Footer />
-    </>
+    </div>
   );
 }
 
