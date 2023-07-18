@@ -5,12 +5,17 @@ import Item from './Item.js';
 //   { id: 2, description: 'Socks', quantity: 12, packed: true },
 // ];
 
-export default function PackingList({ items }) {
+export default function PackingList({ items, onDeleteItem, onToggleItem }) {
   return (
     <div className="list">
       <ul>
         {items.map((item) => (
-          <Item item={item} key={item.id} />
+          <Item
+            key={item.id}
+            item={item}
+            onDeleteItem={onDeleteItem}
+            onToggleItem={onToggleItem}
+          />
         ))}
       </ul>
     </div>
