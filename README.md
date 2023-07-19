@@ -1,9 +1,9 @@
 # react-course-projects
 The Ultimate React Course 2023 React, Redux &amp; More - Projects Repo
 
-* 01-Pizza Menu (Components, props, JSX)
-* 02-Travel List (useState and state management)
-* 03-Eat-n-split (Practice project)
+* 01-[Pizza Menu](https://fast-react-pizza-menu.netlify.app) (Components, props, JSX)
+* 02-[Travel List](https://travel-list-jonas.netlify.app) (useState and state management)
+* 03-[Eat-n-split](https://eat-n-split.netlify.app) (Practice project)
 * 04-usePopcorn (useEffect, data fetching, custom hooks)
 * 05-Classy weather (Class components)
 * 06-Quiz App (useReducer)
