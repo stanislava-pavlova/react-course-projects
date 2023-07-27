@@ -2,7 +2,13 @@ import { useEffect, useState } from 'react';
 import StarRating from './StarRating';
 import Loader from './Loader';
 
-export default function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched, KEY }) {
+export default function MovieDetails({
+  selectedId,
+  onCloseMovie,
+  onAddWatched,
+  watched,
+  KEY,
+}) {
   const [movie, setMovie] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [userRating, setUserRating] = useState('');
@@ -57,6 +63,18 @@ export default function MovieDetails({ selectedId, onCloseMovie, onAddWatched, w
     [selectedId]
   );
 
+  useEffect(
+    function () {
+      if (!title) return;
+      document.title = `Movie | ${title}`;
+
+      return function () {
+        document.title = 'usePopcorn'; // cleanup function
+      };
+    },
+    [title]
+  );
+
   return (
     <div className="details">
       {isLoading ? (
@@ -97,7 +115,8 @@ export default function MovieDetails({ selectedId, onCloseMovie, onAddWatched, w
                 </>
               ) : (
                 <p>
-                  You rated {movie.title} with {watchedUserRating} <span>🌟</span>
+                  You rated {movie.title} with {watchedUserRating}{' '}
+                  <span>🌟</span>
                 </p>
               )}
             </div>
