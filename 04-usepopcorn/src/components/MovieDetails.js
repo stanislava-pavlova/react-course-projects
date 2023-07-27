@@ -77,7 +77,7 @@ export default function MovieDetails({
       }
       getMovieDetails();
     },
-    [selectedId]
+    [KEY, selectedId]
   );
 
   useEffect(
