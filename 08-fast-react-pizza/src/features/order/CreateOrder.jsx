@@ -4,11 +4,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { createOrder } from '../../services/apiRestaurant';
 import { formatCurrency } from '../../utils/helpers';
 import { clearCart, getCart, getTotalCartPrice } from '../cart/cartSlice';
+import { fetchAddress } from '../user/userSlice';
 
 import EmptyCart from '../cart/EmptyCart';
 import store from '../../store';
 import Button from '../../ui/Button';
-import { fetchAddress } from '../user/userSlice';
 
 // https://uibakery.io/regex-library/phone-number
 const isValidPhone = (str) =>
