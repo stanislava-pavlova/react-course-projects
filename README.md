@@ -9,4 +9,4 @@ The Ultimate React Course 2023 React, Redux &amp; More - Projects Repo
 * 06-[Quiz App](https://the-react-quiz.netlify.app) (useReducer)
 * 07-[WorldWise](https://worldwise-jonas.netlify.app) (React Router, context API, memo, useMemo, useCallback)
 * 08-[Fast React Pizza](https://fast-react-pizza.netlify.app) (React Router data loading, Redux, Redux Toolkit, thunks, Tailwind CSS)
-* 09-The Wild Oasis (React Query, Styled Components, React Hook Form, Supabase, advanced compound component pattern, authentication, charts, dark mode, professional application planning and development)
+* 09-[The Wild Oasis](https://the-wild-oasis.vercel.app/login) (React Query, Styled Components, React Hook Form, Supabase, advanced compound component pattern, authentication, charts, dark mode, professional application planning and development)
